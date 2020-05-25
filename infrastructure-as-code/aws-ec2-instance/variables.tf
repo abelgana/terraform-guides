@@ -20,5 +20,5 @@ variable "name" {
 
 variable "vm_count" {
   description = "Number of VMs to run"
-  default     = "1"
+  default     = "6"
 }
