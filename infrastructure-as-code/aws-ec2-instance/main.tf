@@ -7,12 +7,11 @@ provider "aws" {
 }
 
 resource "aws_instance" "ubuntu" {
-  count             = var.vm_count
-  ami               = var.ami_id
-  instance_type     = var.instance_type
+  count         = var.vm_count
+  ami           = var.ami_id
+  instance_type = var.instance_type
 
   tags = {
     Name = var.name
-    Customer = "Revenu Quebec"
   }
 }
